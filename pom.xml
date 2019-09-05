@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>mx-comp-cross-security-db</artifactId>
+	<version>2.0.0-latest</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>mx-cross</groupId>
+		<artifactId>mx-comp-cross-security</artifactId>
+		<version>2.0.0-latest</version>
+	</parent>
+
+	<dependencies>
+		<!-- Security Commons -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-security-commons</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+		<!-- Cross db Commons -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-db-commons</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+
+		<!-- Oracle Driver -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.4</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
